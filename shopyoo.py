@@ -7,6 +7,7 @@ from shop.exceptions import ShopYooExit
 
 from shop.commands import users, inventory, cart, order
 
+
 app = typer.Typer()
 
 user_session = users.user_session
@@ -23,3 +24,6 @@ if __name__ == "__main__":
     with user_session:
         auth.load_session()
         app()
+
+#git testing
+
